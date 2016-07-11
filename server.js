@@ -9,10 +9,12 @@ app.all('/*', function(req , res ) {
         <!DOCTYPE html>\
         <html>\
             <head>\
-                <title>Performance Web Results DB</title>\
+                <base href="/">\
+                <title>Moshe</title>\
+               \
             </head>\
             <body>\
-                <h1>Welcome to Perfrmance DB</h1>\
+                <div ui-view></div>\
                 <script src="bundle.js"></script>\
             </body>\
         </html>\
@@ -21,6 +23,5 @@ app.all('/*', function(req , res ) {
 
 
 app.listen(PORT, function() {
-    console.log('Server Running on '+ PORT);
-
+    console.log('\n\n\nServer Running on '+ PORT+"\n\n\n");
 });
